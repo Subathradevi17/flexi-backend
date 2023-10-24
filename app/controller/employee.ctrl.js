@@ -1,13 +1,29 @@
 const Employee = require("../model/employee.model");
 
 exports.create = (req, res) => {
-  const { empId, name, email, phNo, role } = req.body;
+  const {
+    empId,
+    name,
+    email,
+    phNo,
+    role,
+    leaves,
+    leaveType,
+    startDate,
+    endDate,
+    status,
+  } = req.body;
   const employee = new Employee({
     empId: empId,
     name: name,
     email: email,
     phNo: phNo,
     role: role,
+    leaves: leaves,
+    leaveType: leaveType,
+    startDate: startDate,
+    endDate: endDate,
+    status: status,
   });
 
   employee

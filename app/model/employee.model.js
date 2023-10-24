@@ -7,6 +7,11 @@ const employeeSchema = new mongoose.Schema(
     email: String,
     phNo: String,
     role: String,
+    leaves: Number,
+    leaveType: String,
+    startDate: String,
+    endDate: String,
+    status: String,
   },
   { timestamps: true }
 );
